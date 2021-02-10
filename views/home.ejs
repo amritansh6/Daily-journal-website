@@ -3,7 +3,7 @@
 <p><%= para1 %></p>
   <%  new1.forEach(function(post){ %>
       <h1><%= post.title %> </h1>
-       <p><%= post.content.slice(0,100)+"..." %><a href="/posts/<%= post.title%>">ReadMore</a> </p> 
+       <p><%= post.content.slice(0,100)+"..." %><a href="/posts/<%= post._id%>">ReadMore</a> </p>
    <% }); %>
 
 <%- include("partials/footer") -%>
